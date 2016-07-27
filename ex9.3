@@ -1,0 +1,14 @@
+%9.3
+%a
+syms p r t
+volume = int(int(int(r^3*sin(p),r,0,1), p,0,pi/2), t,0,2*pi)
+pretty(volume)
+echo off; diary off
+%%
+%9.3
+%b
+syms p r t
+volume = int(int(int(r^3*sin(p)*cos(t),r,0,1), p,0,pi/2), t,0,2*pi)
+double(ans)
+
+
